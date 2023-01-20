@@ -1,4 +1,4 @@
-const { isEmpty, isValid} = require("../validations");
+const { isEmpty, isValid } = require("../validations");
 
 describe("validations tests suites - isEmpty", () => {
     test("should return true as the label is undefined", () => {
@@ -34,7 +34,7 @@ describe("validations tests suites - isValid", () => {
     });
 
     test("should return true as the label contains a number and a special character", () => {
-        const result = isEmpty("GamerTag1$");
+        const result = isValid("GamerTag1$");
         expect(result).toBe(true);
     });
 });
