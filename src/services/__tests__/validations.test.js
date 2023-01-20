@@ -34,7 +34,7 @@ describe("validations tests suites - isValid", () => {
     });
 
     test("should return true as the label contains a number and a special character", () => {
-        const result = isEmpty("GamerTag1$");
+        const result = isValid("GamerTag1$");
         expect(result).toBe(true);
     });
 });
